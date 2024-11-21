@@ -5,8 +5,6 @@
 
 from array import array
 
-numbers = array('i', [2, 7, 11, 15]) 
-target = 9
 
 def two_sum(numbers: array, target: int) -> array:
     checked = set()
@@ -19,9 +17,17 @@ def two_sum(numbers: array, target: int) -> array:
 
     return []
 
-result = two_sum(numbers, target)
 
-if result:
-    print(f"Pair found: {result}")
-else:
-    print("No pair found for the target!")
+if __name__ == "__main__":
+    numbers = array('i', [2, 7, 11, 15]) 
+    target = 9
+    
+    result = two_sum(numbers, target)
+
+    if result:
+        print(f"Pair found: {result}")
+    else:
+        print("No pair found for the target!")
+
+
+    
